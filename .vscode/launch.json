@@ -15,7 +15,10 @@
             "cwd": "${workspaceFolder}/ConsoleApp",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
-            "stopAtEntry": false
+            "stopAtEntry": false,
+            "env": {
+                "SEQ_URL": "http://localhost:5341/"
+            }
         },
         {
             "name": ".NET Core Attach",

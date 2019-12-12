@@ -10,14 +10,14 @@
         "projectUniqueName": "C:\\Users\\jbastow\\Documents\\projects\\isd-samples\\container-demos\\ConsoleApp\\ConsoleApp.csproj",
         "projectName": "ConsoleApp",
         "projectPath": "C:\\Users\\jbastow\\Documents\\projects\\isd-samples\\container-demos\\ConsoleApp\\ConsoleApp.csproj",
-        "packagesPath": "C:\\Users\\jbastow\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\adm_jbastow\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\jbastow\\Documents\\projects\\isd-samples\\container-demos\\ConsoleApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\jbastow\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\adm_jbastow\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

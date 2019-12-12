@@ -35,9 +35,9 @@ C:\Users\jbastow\Documents\projects\isd-samples\container-demos\ConsoleApp\bin\D
 C:\Users\jbastow\Documents\projects\isd-samples\container-demos\ConsoleApp\bin\Debug\netcoreapp3.0\Serilog.Sinks.File.dll
 C:\Users\jbastow\Documents\projects\isd-samples\container-demos\ConsoleApp\bin\Debug\netcoreapp3.0\Serilog.Sinks.PeriodicBatching.dll
 C:\Users\jbastow\Documents\projects\isd-samples\container-demos\ConsoleApp\bin\Debug\netcoreapp3.0\Serilog.Sinks.Seq.dll
-C:\Users\jbastow\Documents\projects\isd-samples\container-demos\ConsoleApp\obj\Debug\netcoreapp3.0\ConsoleApp.csprojAssemblyReference.cache
 C:\Users\jbastow\Documents\projects\isd-samples\container-demos\ConsoleApp\obj\Debug\netcoreapp3.0\ConsoleApp.AssemblyInfoInputs.cache
 C:\Users\jbastow\Documents\projects\isd-samples\container-demos\ConsoleApp\obj\Debug\netcoreapp3.0\ConsoleApp.AssemblyInfo.cs
 C:\Users\jbastow\Documents\projects\isd-samples\container-demos\ConsoleApp\obj\Debug\netcoreapp3.0\ConsoleApp.csproj.CopyComplete
 C:\Users\jbastow\Documents\projects\isd-samples\container-demos\ConsoleApp\obj\Debug\netcoreapp3.0\ConsoleApp.dll
 C:\Users\jbastow\Documents\projects\isd-samples\container-demos\ConsoleApp\obj\Debug\netcoreapp3.0\ConsoleApp.pdb
+C:\Users\jbastow\Documents\projects\isd-samples\container-demos\ConsoleApp\obj\Debug\netcoreapp3.0\ConsoleApp.csprojAssemblyReference.cache
