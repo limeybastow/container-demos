@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "Hello container world data file!"
+cat ./data/some-data-file.txt

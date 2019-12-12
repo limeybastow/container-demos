@@ -1,0 +1,151 @@
+BASIC FILE
+docker build -t hello-bash .
+docker run --rm --name hello-bash-demo hello-bash
+docker run --rm --name hello-bash-demo hello-bash ls ./ && printenv
+
+DO SOMETHING
+# List directory contents.
+CMD [ "ls", ""]
+
+DO SOMETHING DIFFERENT
+docker run --rm --name hello-bash-demo hello-bash printenv
+
+OPEN BASH SHELL
+docker run --rm -it --name hello-bash-demo hello-bash bash
+
+ADD SCRIPTS AND RUN ONE
+# Copy script files
+COPY *-script ./
+
+# Run hello-containers-script
+CMD [ "/bin/bash", "/hello-containers-script"]
+
+docker build -t hello-bash .
+docker run --rm --name hello-bash-demo hello-bash
+
+SHOW THAT SCRIPTS ARE THERE
+docker run --rm -it --name hello-bash-demo hello-bash bash
+
+ENVIRONMENT VARIABLES
+# Set default environment variable
+ENV NAME=Joe
+
+# Run hello-environment-script
+CMD [ "/bin/bash", "/hello-environment-script"]
+
+docker build -t hello-bash .
+docker run --rm hello-bash
+
+OVERRIDE ENVIRONMENT VARIABLE
+docker run --rm -e NAME=Fred hello-bash
+
+ADD ADDITIONAL ENVIRONMENT VARIABLE
+docker run --rm -e NAME=Fred -e SOME_CONN_STRING='Some:connection;string' hello-bash
+
+COPY FILE AND DISPLAY
+# Copy data files
+COPY *.txt ./data/
+
+# Run hello-file-script.
+CMD [ "/bin/bash", "/hello-file-script"]
+
+docker build -t hello-bash .
+docker run --rm hello-bash
+
+MODIFY DATA AND SHOW ONLY DATA COPY LAYER RUN
+
+docker build -t hello-bash .
+docker run --rm hello-bash
+
+OPEN BASH SHELL AND CHANGE FILE
+docker run --rm -it --name hello-bash-demo hello-bash bash
+
+UH OH...NO VIM
+INSTALL VIM
+
+# Install vim
+RUN apt-get update  &&\
+    apt-get -y install vim
+
+docker build -t hello-bash .
+docker run --rm -it --name hello-bash-demo hello-bash bash
+
+EDIT FILE
+vi data/some-data-file.txt
+/hello-file-script
+
+STOP CONTAINER AND RESTART
+exit
+docker run --rm -it --name hello-bash-demo hello-bash bash
+
+RUN W/O RM
+docker run -it --name hello-bash-demo hello-bash bash
+/hello-file-script
+vi data/some-data-file.txt
+/hello-file-script
+exit
+
+SHOW IT IS STILL RUNNING
+docker ps
+
+RESTART
+docker stop hello-bash-demo
+docker ps
+docker start hello-bash-demo
+docker ps
+
+SHOW THAT FILE IS STILL MODIFIED
+docker exec -it hello-bash-demo /hello-file-script
+
+STOP AND DELETE CONTAINER
+docker stop hello-bash-demo
+docker container rm hello-bash-demo
+
+SHOW MULTIPLE CONTAINERS FROM SAME IMAGE
+docker run -it --name hello-bash-demo hello-bash bash
+/hello-file-script
+vi data/some-data-file.txt
+/hello-file-script
+exit 
+docker ps
+docker start hello-bash-demo
+docker ps
+
+docker run -it --name hello-bash-demo-two hello-bash bash
+exit
+docker ps
+docker start hello-bash-demo-two
+docker ps
+
+docker exec -it hello-bash-demo /hello-file-script
+docker exec -it hello-bash-demo-two /hello-file-script
+
+
+
+LIST AND CLEANUP CONTAINERS
+docker container ls
+docker stop hello-bash-demo
+docker container ls
+docker container ls --all
+docker container prune
+docker container ls --all
+docker stop hello-bash-demo-two
+docker container ls --all
+docker container rm hello-bash-demo-two
+docker container ls --all
+
+PUBLISH DOCKER IMAGE
+docker tag hello-bash limeybastow/hello-bash
+docker push limeybastow/hello-bash
+
+CHANGE IMAGE AND REPUBLISH
+docker build -t limeybastow/hello-bash .
+docker push limeybastow/hello-bash
+
+LIST AND CLEANUP CONTAINERS
+docker image ls
+docker image ls --all
+docker image rm hello-bash
+docker image rm limeybastow/hello-bash
+
+
